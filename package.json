@@ -1,0 +1,17 @@
+{
+  "name": "monorepo-test",
+  "version": "1.0.0",
+  "repository": "https://github.com/tokamak-network/contracts-monorepo.git",
+  "author": "Onther",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "integration-tests"
+    ],
+    "nohoist": [
+      "**/@openzeppelin/*"
+    ]
+  }
+}
